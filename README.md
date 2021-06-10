@@ -1,6 +1,5 @@
 # Image creation project using GAN model and CNN model
 GAN model(pix2pix), CNN model(autoencoder)을 활용하여 이미지채색화, 모네화풍으로 변환, 만화화풍으로 변환을 수행
-// 그림 추가
 
 ## 1. Introduction과제 개요
 ### Needs
