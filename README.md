@@ -10,7 +10,7 @@ GAN(Generative Adversarial Networks), 적대적 생성 신경망을 활용한 �
 1) 흑백이미지 채색화
 2) 원본이미지 모네화풍으로 변환
 3) 원본이미지 만화화풍으로 변환
- 본 프로젝트에서는 위의 총 3가지 스타일의 이미지들을 생성해보고자 한다. 3가지 스타일의 이미지를 생성하는 과정에서 pix2pix 및 autoencoder 모델을 활용하여 각각 생성해본 후, 모델 평가 지표인 MSE, PSNR, SSIM을 활용하여 성능을 비교해보고자 한다.
+→ 본 프로젝트에서는 위의 총 3가지 스타일의 이미지들을 생성해보고자 한다. 3가지 스타일의 이미지를 생성하는 과정에서 pix2pix 및 autoencoder 모델을 활용하여 각각 생성해본 후, 모델 평가 지표인 MSE, PSNR, SSIM을 활용하여 성능을 비교해보고자 한다.
 
 ### Goals
 #### 사용할 방법론 및 과정
@@ -38,7 +38,7 @@ MSE, PSNR, SSIM 평가지표를 활용하여 모델 성능을 비교 분석한�
   
 ## 3. Results
 ### Model structure
-#### - pix2pix
+### (1) pix2pix
 #### Generator 구조
 Generator와 Discriminator로 나눠진 구조이다. Genrator 구조는 아래 그림과 같다. Generator는 Unet 구조를 따르며, 논문에 나온 generator 구조를 활용하여 오른쪽 그림처럼 generator을 구축하였다.
 // 그림 추가
@@ -57,7 +57,7 @@ Discriminator의 구조는 아래와 같다.
 #### 손실함수 생성
  generator, discriminator 모델에 대한 판별자는 크로스 엔트로피를 사용한다. real 이미지에 대해선 1로 판단하고, gen 이미지에 대해선 0으로 판단하는 것을 기준으로 학습을 한다.
 
-#### - autoencoder
+### (2) autoencoder
 autoencoder은 encoder과 decoder로 이뤄졌다. bottleneck을 기준으로 output shape가 8*8, channel이 512까지 줄어들었다가 다시 원래 크기인 256*256, channel은 3으로 되돌아오는 구조로 이뤄졌다.
 // 그림 추가
 
