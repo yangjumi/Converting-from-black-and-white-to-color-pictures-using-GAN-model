@@ -62,7 +62,7 @@ autoencoder은 encoder과 decoder로 이뤄졌다. bottleneck을 기준으로 ou
 ![image05](https://user-images.githubusercontent.com/60904652/121556840-30823980-ca4f-11eb-9d7c-0fb641d20117.png)  
 
 ### Analysis evaluation index
-학습 결과에 대한 성능은 MSE, PSNR, SSIM을 이용하여 판단하였다. 해당 평가 지표에 대한 코드는 아래와 같이 구현하였다.
+학습 결과에 대한 성능은 MSE, PSNR, SSIM을 이용하여 판단하였다. 해당 평가 지표에 대한 코드는 아래와 같이 구현하였다.  
 ![image06](https://user-images.githubusercontent.com/60904652/121556852-31b36680-ca4f-11eb-869d-039e4c3443e5.png)  
 ![image07](https://user-images.githubusercontent.com/60904652/121556863-3415c080-ca4f-11eb-9109-598710929433.png)  
 
