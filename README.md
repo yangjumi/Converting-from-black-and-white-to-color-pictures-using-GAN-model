@@ -89,8 +89,8 @@ autoencoder은 encoder과 decoder로 이뤄졌다. bottleneck을 기준으로 ou
 ![image14](https://user-images.githubusercontent.com/60904652/121556910-4132af80-ca4f-11eb-9af2-1b2426eff59e.png)  
 각 평가지표별 수치를 나타낸 것이다. 육안상으로도 pix2pix의 결과가 더 좋아보이는 것으로 보아 이미지 생성에 있어 GAN 모델인 pix2pix가 더 좋음을 확인할 수 있다.
  
-## Expected effect and Application plan
+## 4. Expected effect and Application plan
 현재 이미지 생성에 많이 쓰이는 GAN 모델과 기존에 쓰였던 인공신경망 모델 두 가지를 통해 여러 가지의 이미지들을 생성해보고, 결과를 도출해보면서 GAN 모델의 우수성을 알 수 있었다. 이처럼 다양한 방식으로 이미지 생성을 할 수 있다면 디자인 분야에 많은 도움이 될 수 있다고 생각한다. 기존 디자이너들이 수작업으로 하던 일을 모델을 통해 손쉽게 할 수 있다는 점에서 높은 평가를 받을 수 있다고 생각한다.
  
-## Conclusions and Suggestions
+## 5. Conclusions and Suggestions
 두가지 모델을 통해 이미지 생성을 해본 후, 크게 2가지의 한계점이 도출되었다. 첫 번째로, 최종 결과물 사진의 화질을 더 좋게 만들 수 있는 방식에 대해 생각해보게 되었고, 두 번째로, 파라미터 수정을 통해 모델을 강화할 수 있는 방식에 대해 생각해보게 되었다. 현재의 모델 결과보다 더 좋은 방식으로 발전할 수 있는 방안에 대해 더 고안해보고 싶어졌다. 또한 처음 도전해보는 GAN 모델 구축인만큼 어려움이 많았지만, 모델 구조 뿐 아니라 인공지능(AI) 분야에 대해 깊게 이해할 수 있는 시간이 되어 유익한 프로젝트였다.
